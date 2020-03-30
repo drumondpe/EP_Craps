@@ -7,6 +7,7 @@ Created on Wed Mar 25 17:17:57 2020
 
 #Precisamos travar o código antes da fase point e peruntar se está preparado para ela
 #Ajustar o Come Out
+#Dar as fichas
 
 import random
 
@@ -16,6 +17,9 @@ jogadaUm = 0
 def jogo()  :
     RespostaSimNao = str(input('Você quer jogar nosso maravilhoso Craps (sim/não)??? '))
     RespostaSimNao = RespostaSimNao.lower()
+    fichas = 100
+    RespostaFichas = int(input('Quantas fichas você quer apostar? '))
+    
     
     while RespostaSimNao == 'sim':
         print ('Você está na fase: Come Out')
@@ -48,6 +52,7 @@ def jogo()  :
                     RespostaSimNao = str(input('Você já perdeu?! Quer jogar de novo??? '))
                     RespostaSimNao = RespostaSimNao.lower()
                 
+                
                 elif SomaDados == jogadaUm:
                     RespostaSimNao = str(input('Você venceu! Não quer tentar a sorte de novo? '))
                     RespostaSimNao = RespostaSimNao.lower()
@@ -55,10 +60,10 @@ def jogo()  :
                 else:
                     RespostaSimNao == 'sim'
                     
+                    
 #36-50 pertencem a jogada "Point"
     print ('Esperamos que tenha gostado de jogar!')
 jogo()   
-
 
 
 
