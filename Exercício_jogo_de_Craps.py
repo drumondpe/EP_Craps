@@ -9,7 +9,7 @@ import random
 
 def jogo()  :
     RespostaSimNao = str(input('Você quer jogar nosso maravilhoso Craps (sim/não)???'))
-    RespostaSimNao = RespostaSimNao[0].lower()
+    RespostaSimNao = RespostaSimNao.lower()
     
     while RespostaSimNao == 'sim':
         dadoUm = random.randint(1,6)
@@ -17,14 +17,20 @@ def jogo()  :
         SomaDados= dadoUm+dadoDois
         
         if SomaDados == (2, 3, 12):
-            print ('Você já perdeu?! Quer jogar de novo???')
+            RespostaSimNao = str(input('Você já perdeu?! Quer jogar de novo??? '))
+            RespostaSimNao = RespostaSimNao.lower()
+            
+        elif SomaDados == (7, 11):
+            RespostaSimNao = str(input('Você venceu! Não quer tentar a sorte de novo? '))
+            RespostaSimNao = RespostaSimNao.lower()
+
         
         
 
-    print ('Esperamos que tenha gostado de jogar!')
+    print ('Esperamos que tenha gostado de jogar!!!')
+jogo()
 
 
-print ('testando outra vez')
 
 
    
