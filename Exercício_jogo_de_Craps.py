@@ -40,6 +40,12 @@ def jogo()  :
                 print('Você tirou', SomaDodaos)
 
                 if SomaDados in [2, 3, 7 ,11 ,12]:
+                    RespostaSimNao = str(input('Você já perdeu?! Quer jogar de novo??? '))
+                    RespostaSimNao = RespostaSimNao.lower()
+
+                   
+
+
 
 
     print ('Esperamos que tenha gostado de jogar!')
