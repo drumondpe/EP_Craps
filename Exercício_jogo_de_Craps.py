@@ -46,7 +46,7 @@ def jogo()  :
         
         
 
-    print ('Esperamos que tenha gostado de jogar!!!')
+    print ('Esperamos que tenha gostado de jogar!')
 jogo()
 
 
