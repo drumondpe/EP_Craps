@@ -40,12 +40,15 @@ def jogo()  :
                 print('Você tirou', SomaDodaos)
 
                 if SomaDados in [2, 3, 7 ,11 ,12]:
-                    RespostaSimNao = str(input('Você já perdeu?! Quer jogar de novo??? '))
-                    RespostaSimNao = RespostaSimNao.lower()
+                   RespostaSimNao = str(input('Você já perdeu?! Quer jogar de novo??? '))
+                   RespostaSimNao = RespostaSimNao.lower()
 
                 elif SomaDados == jogadaUm:
                     RespostaSimNao = str(input('Você venceu! Não quer tentar a sorte de novo? '))
                     RespostaSimNao = RespostaSimNao.lower()
+                 else:
+                    RespostaSimNao == 'sim'
+
 
 
 
