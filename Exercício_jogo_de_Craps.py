@@ -43,12 +43,14 @@ def jogo()  :
                     RespostaSimNao = str(input('Você já perdeu?! Quer jogar de novo??? '))
                     RespostaSimNao = RespostaSimNao.lower()
 
-                   
+                elif SomaDados == jogadaUm:
+                    RespostaSimNao = str(input('Você venceu! Não quer tentar a sorte de novo? '))
+                    RespostaSimNao = RespostaSimNao.lower()
 
 
 
 
-    print ('Esperamos que tenha gostado de jogar!')
+    print ('Esperamos que tenha gostado de jogar!!!')
 jogo()
 
 
