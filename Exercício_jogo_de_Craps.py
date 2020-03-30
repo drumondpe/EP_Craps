@@ -5,6 +5,9 @@ Created on Wed Mar 25 17:17:57 2020
 @author: Pedro Drumond
 """
 
+#Precisamos travar o código antes da fase point e peruntar se está preparado para ela
+#Ajustar o Come Out
+
 import random
 
 jogadaUm = 0
@@ -15,6 +18,7 @@ def jogo()  :
     RespostaSimNao = RespostaSimNao.lower()
     
     while RespostaSimNao == 'sim':
+        print ('Você está na fase: Come Out')
         dadoUm = random.randint(1,6)
         dadoDois = random.randint(1,6)
         SomaDados= dadoUm+dadoDois
@@ -32,29 +36,28 @@ def jogo()  :
           
         else:
             jogadaUm == SomaDados
-
-            while RespostaSimNao == 'sim'
-		        dadoUm = random.randint(1,6)
-               	dadoDois = random.randint(1,6)
+            print ('Você está na fase: Point')
+            
+            while RespostaSimNao == 'sim':
+                dadoUm = random.randint(1,6)
+                dadoDois = random.randint(1,6)
                 SomaDados= dadoUm + dadoDois
-                print('Você tirou', SomaDodaos)
-
+                print ('Você tirou', SomaDados) 
+                
                 if SomaDados in [2, 3, 7 ,11 ,12]:
-                   RespostaSimNao = str(input('Você já perdeu?! Quer jogar de novo??? '))
-                   RespostaSimNao = RespostaSimNao.lower()
-
+                    RespostaSimNao = str(input('Você já perdeu?! Quer jogar de novo??? '))
+                    RespostaSimNao = RespostaSimNao.lower()
+                
                 elif SomaDados == jogadaUm:
                     RespostaSimNao = str(input('Você venceu! Não quer tentar a sorte de novo? '))
                     RespostaSimNao = RespostaSimNao.lower()
-                 else:
+                    
+                else:
                     RespostaSimNao == 'sim'
-
-
-
-
-
-    print ('Esperamos que tenha gostado de jogar!!!')
-jogo()
+                    
+#36-50 pertencem a jogada "Point"
+    print ('Esperamos que tenha gostado de jogar!')
+jogo()   
 
 
 
