@@ -33,6 +33,13 @@ def jogo()  :
         else:
             jogadaUm == SomaDados
             print (RespostaSimNao)
+
+            while RespostaSimNao == ‘sim’
+		        dadoUm = random.randint(1,6)
+               	dadoDois = random.randint(1,6)
+                SomaDados= dadoUm + dadoDois
+
+
             
 
 
