@@ -6,7 +6,7 @@ Created on Wed Mar 25 17:17:57 2020
 """
 
 #Precisamos travar o código antes da fase point e peruntar se está preparado para ela
-#Ajustar o Come Out
+#Ajustar o jogar de novo
 #Dar as fichas
 
 import random
