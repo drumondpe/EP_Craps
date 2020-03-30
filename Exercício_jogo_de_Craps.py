@@ -20,11 +20,11 @@ def jogo()  :
         SomaDados= dadoUm+dadoDois
         print ("Você tirou", SomaDados)
         
-        if SomaDados == (2, 3, 12):
+        if SomaDados in [2, 3, 12]:
             RespostaSimNao = str(input('Você já perdeu?! Quer jogar de novo??? '))
             RespostaSimNao = RespostaSimNao.lower()
             
-        elif SomaDados == (7, 11):
+        elif SomaDados in [7, 11]:
             RespostaSimNao = str(input('Você venceu! Não quer tentar a sorte de novo? '))
             RespostaSimNao = RespostaSimNao.lower()
             
@@ -32,16 +32,17 @@ def jogo()  :
           
         else:
             jogadaUm == SomaDados
-            print (RespostaSimNao)
-
-            while RespostaSimNao == 'sim'
-		        dadoUm = random.randint(1,6)
-               	dadoDois = random.randint(1,6)
+            
+            while RespostaSimNao == 'sim':
+                dadoUm = random.randint(1,6)
+                dadoDois = random.randint(1,6)
                 SomaDados= dadoUm + dadoDois
-
-                if SomaDados == (2 or 3 or 7 or 11 or 12):
+                print ('Você tirou', SomaDados) 
+                
+                if SomaDados in [2, 3, 7 ,11 ,12]:
                     RespostaSimNao = str(input('Você já perdeu?! Quer jogar de novo??? '))
                     RespostaSimNao = RespostaSimNao.lower()
+#                   Precisa parar o código aqui 
             
 
 
