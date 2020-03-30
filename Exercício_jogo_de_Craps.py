@@ -23,5 +23,5 @@ def jogo()  :
 
     print ('Esperamos que tenha gostado de jogar!')
 
-print ('testando mais uma vez')
+print ('testando mais')
    
