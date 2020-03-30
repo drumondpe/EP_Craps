@@ -6,8 +6,10 @@ Created on Wed Mar 25 17:17:57 2020
 """
 
 import random
+jogadaUm=0
 
-def jogo()  :
+
+def jogo():
     RespostaSimNao = str(input('Você quer jogar nosso maravilhoso Craps (sim/não)???'))
     RespostaSimNao = RespostaSimNao.lower()
     
@@ -23,6 +25,10 @@ def jogo()  :
         elif SomaDados == (7, 11):
             RespostaSimNao = str(input('Você venceu! Não quer tentar a sorte de novo? '))
             RespostaSimNao = RespostaSimNao.lower()
+        else:
+            jogadaUm==SomaDados
+            
+
 
         
         
