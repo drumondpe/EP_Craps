@@ -34,12 +34,14 @@ def jogo()  :
             jogadaUm == SomaDados
             print (RespostaSimNao)
 
-            while RespostaSimNao == ‘sim’
+            while RespostaSimNao == 'sim'
 		        dadoUm = random.randint(1,6)
                	dadoDois = random.randint(1,6)
                 SomaDados= dadoUm + dadoDois
 
-
+                if SomaDados == (2 or 3 or 7 or 11 or 12):
+                    RespostaSimNao = str(input('Você já perdeu?! Quer jogar de novo??? '))
+                    RespostaSimNao = RespostaSimNao.lower()
             
 
 
