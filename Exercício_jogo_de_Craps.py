@@ -19,3 +19,13 @@ def jogo()  :
     pointWin = 0
     pointLoss = 7
     betComeOut = 0 
+
+    inField = False
+    fieldWin = [2, 3, 4, 9, 10, 11, 12]
+    fieldLoss = [5, 6, 7, 8]
+    betField = 0 
+
+    inAnyCraps = False
+    anyCrapsWin = [2, 3, 12]
+    anyCrapsLoss = [1, 4, 5, 6, 7, 8, 9, 10, 11]
+    betAnyCraps = 0 
