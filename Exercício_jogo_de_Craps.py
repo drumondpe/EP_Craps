@@ -29,3 +29,4 @@ def jogo()  :
     anyCrapsWin = [2, 3, 12]
     anyCrapsLoss = [1, 4, 5, 6, 7, 8, 9, 10, 11]
     betAnyCraps = 0 
+    
