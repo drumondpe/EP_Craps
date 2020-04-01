@@ -47,3 +47,15 @@ def jogo()  :
 
         print('Você começou a jogar!')
         print("Você tem {} fichas".format(fichas))
+
+        if(inComeOut):
+            print('Você está na fase Come Out')
+            apostarComeOut = str(input('Você quer apostar em ComeOut (sim/não)??? '))
+            apostarComeOut = apostarComeOut.lower()
+            
+            if(apostarComeOut == "sim"):
+                betComeOut = int(input('Qual valor você quer apostar? '))
+            
+                
+        else:
+            print("Você está na fase Point, seu número é {}".format(pointWin))
