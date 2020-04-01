@@ -36,3 +36,14 @@ def jogo()  :
     twelveWin = [12] 
     twelveCrapsLoss = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
     betTwelve = 0
+
+    fichas = 1000
+    
+    jogando=True
+    resposta=input('Você quer jogar (sim/não)? ')       
+    if resposta=='não':
+        jogando=False 
+    while(jogando):
+
+        print('Você começou a jogar!')
+        print("Você tem {} fichas".format(fichas))
