@@ -20,17 +20,5 @@ def jogo()  :
     pointLoss = 7
     betComeOut = 0 
 
-<<<<<<< HEAD
     inField = False
-=======
-    inField = False
-    fieldWin = [2, 3, 4, 9, 10, 11, 12]
-    fieldLoss = [5, 6, 7, 8]
-    betField = 0 
-
-    inAnyCraps = False
-    anyCrapsWin = [2, 3, 12]
-    anyCrapsLoss = [1, 4, 5, 6, 7, 8, 9, 10, 11]
-    betAnyCraps = 0 
-    
->>>>>>> e333b60e6f415827f9580e8e4bbce12d1540f15f
+    fieldWinUm = [3, 4, 9, 10, 11] #ganha o valor que apostou
