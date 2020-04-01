@@ -59,3 +59,13 @@ def jogo()  :
                 
         else:
             print("Você está na fase Point, seu número é {}".format(pointWin))
+
+#Pergunta aposta ANYCRAPS    
+        apostarAnyCraps = str(input('Você quer apostar em AnyCraps (sim/não)??? '))
+        apostarAnyCraps = apostarAnyCraps.lower() 
+
+        if(apostarAnyCraps == "sim"):
+            inAnyCraps = True
+            betAnyCraps = int(input('Qual valor você quer apostar? '))
+        else:
+            inAnyCraps = False
