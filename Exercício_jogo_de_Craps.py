@@ -22,3 +22,17 @@ def jogo()  :
 
     inField = False
     fieldWinUm = [3, 4, 9, 10, 11] #ganha o valor que apostou
+    fieldWinDois = [2] #ganha o dobro do que apostou
+    fieldWinTres = [12] #ganha o triplo
+    fieldLoss = [5, 6, 7, 8] #perde tudo
+    betField = 0 
+
+    inAnyCraps = False
+    anyCrapsWin = [2, 3, 12] #7x o que apostou
+    anyCrapsLoss = [1, 4, 5, 6, 7, 8, 9, 10, 11] #perde o que apostou
+    betAnyCraps = 0 
+
+    inTwelve = False
+    twelveWin = [12] 
+    twelveCrapsLoss = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    betTwelve = 0
