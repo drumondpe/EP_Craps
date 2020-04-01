@@ -68,6 +68,7 @@ def jogo()  :
             betField = int(input('Qual valor você quer apostar ?? '))
         else:
             inField = False
+
 #Pergunta aposta ANYCRAPS    
         apostarAnyCraps = str(input('Você quer apostar em AnyCraps (sim/não)??? '))
         apostarAnyCraps = apostarAnyCraps.lower() 
@@ -77,6 +78,7 @@ def jogo()  :
             betAnyCraps = int(input('Qual valor você quer apostar? '))
         else:
             inAnyCraps = False
+
 #Pergunta aposta TWELVE    
         apostarTwelve = str(input('Você quer apostar em Twelve (sim/não)??? '))
         apostarTwelve = apostarTwelve.lower() 
@@ -86,3 +88,23 @@ def jogo()  :
             betTwelve = int(input('Qual valor você quer apostar ?? '))
         else:
             inTwelve = False            
+
+        #Roda dados
+        dadoUm = random.randint(1,6)
+        dadoDois = random.randint(1,6)
+        somaDados= dadoUm+dadoDois
+
+        print("Sua soma foi {}".format(somaDados))
+
+#Realiza aposta ComeOut            
+        if(inComeOut):
+            if True:
+                if(somaDados in comeOutWin):
+                    fichas += betComeOut*2
+                    print ('Você ganhou 2x seu valor de aposta')
+                elif(somaDados in comeOutLoss):
+                    fichas -= betComeOut
+                    print ('Você perdeu seu valor de aposta')
+                else:
+                    inComeOut = False
+                    pointWin = somaDados
