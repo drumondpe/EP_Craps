@@ -50,7 +50,7 @@ def jogo()  :
 
         if(inComeOut):
             print('Você está na fase Come Out')
-            apostarComeOut = str(input('Você quer apostar em Pass Line Bet (sim/não)??? '))
+            apostarComeOut = str(input('Você quer apostar em ComeOut (sim/não)??? '))
             apostarComeOut = apostarComeOut.lower()
             
             if(apostarComeOut == "sim"):
@@ -65,7 +65,7 @@ def jogo()  :
 
         if(apostarField == "sim"):
             inField = True
-            betField = int(input('Qual valor você quer apostar? '))
+            betField = int(input('Qual valor você quer apostar ?? '))
         else:
             inField = False
 
@@ -85,7 +85,7 @@ def jogo()  :
 
         if(apostarTwelve == "sim"):
             inTwelve = True
-            betTwelve = int(input('Qual valor você quer apostar? '))
+            betTwelve = int(input('Qual valor você quer apostar ?? '))
         else:
             inTwelve = False            
 
