@@ -19,3 +19,5 @@ def jogo()  :
     pointWin = 0
     pointLoss = 7
     betComeOut = 0 
+
+    inField = False
