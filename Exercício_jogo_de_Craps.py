@@ -108,3 +108,13 @@ def jogo()  :
                 else:
                     inComeOut = False
                     pointWin = somaDados
+        else:
+            if(somaDados == pointWin):
+                fichas += betComeOut
+                print ('Você ganhou seu valor de aposta')
+                inComeOut = True
+                
+            elif(somaDados == pointLoss):
+                fichas -= betComeOut
+                print ('Você perdeu seu valor de aposta')
+                inComeOut = True            
