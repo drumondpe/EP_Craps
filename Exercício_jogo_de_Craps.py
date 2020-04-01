@@ -130,5 +130,11 @@ def jogo()  :
                     fichas += betField*3
                 elif (somaDados in fieldLoss):
                     fichas -= betField
-
+#Realiza aposta ANYCRAPS
+        if(inAnyCraps):
+            if True:
+                if(somaDados in anyCrapsWin):
+                    fichas += betAnyCraps*7
+                else:
+                    fichas -= betAnyCraps
         
