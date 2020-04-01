@@ -59,7 +59,15 @@ def jogo()  :
                 
         else:
             print("Você está na fase Point, seu número é {}".format(pointWin))
+#Perfunta aposta FIELD    
+        apostarField = str(input('Você quer apostar em Field (sim/não)??? '))
+        apostarField = apostarField.lower() 
 
+        if(apostarField == "sim"):
+            inField = True
+            betField = int(input('Qual valor você quer apostar ?? '))
+        else:
+            inField = False
 #Pergunta aposta ANYCRAPS    
         apostarAnyCraps = str(input('Você quer apostar em AnyCraps (sim/não)??? '))
         apostarAnyCraps = apostarAnyCraps.lower() 
@@ -69,3 +77,12 @@ def jogo()  :
             betAnyCraps = int(input('Qual valor você quer apostar? '))
         else:
             inAnyCraps = False
+#Pergunta aposta TWELVE    
+        apostarTwelve = str(input('Você quer apostar em Twelve (sim/não)??? '))
+        apostarTwelve = apostarTwelve.lower() 
+
+        if(apostarTwelve == "sim"):
+            inTwelve = True
+            betTwelve = int(input('Qual valor você quer apostar ?? '))
+        else:
+            inTwelve = False            
