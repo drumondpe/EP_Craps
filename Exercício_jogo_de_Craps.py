@@ -65,7 +65,7 @@ def jogo()  :
 
         if(apostarField == "sim"):
             inField = True
-            betField = int(input('Qual valor você quer apostar ?? '))
+            betField = int(input('Qual valor você quer apostar? '))
         else:
             inField = False
 
@@ -85,7 +85,7 @@ def jogo()  :
 
         if(apostarTwelve == "sim"):
             inTwelve = True
-            betTwelve = int(input('Qual valor você quer apostar ?? '))
+            betTwelve = int(input('Qual valor você quer apostar? '))
         else:
             inTwelve = False            
 
