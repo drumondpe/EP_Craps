@@ -137,4 +137,13 @@ def jogo()  :
                     fichas += betAnyCraps*7
                 else:
                     fichas -= betAnyCraps
-        
+
+#Realiza aposta TWELVE
+        if(inTwelve):
+            if True:
+                if(somaDados in twelveWin):
+                    fichas += betTwelve*30
+                else:
+                    fichas -= betTwelve            
+                
+jogo()
