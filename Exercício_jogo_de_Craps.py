@@ -118,3 +118,17 @@ def jogo()  :
                 fichas -= betComeOut
                 print ('Você perdeu seu valor de aposta')
                 inComeOut = True            
+
+#Realiza aposta FIELD
+        if(inField):
+            if True:
+                if(somaDados in fieldWinUm):
+                    fichas += betField
+                elif (somaDados in fieldWinDois):
+                    fichas += betField*2
+                elif (somaDados in fieldWinTres):
+                    fichas += betField*3
+                elif (somaDados in fieldLoss):
+                    fichas -= betField
+
+        
