@@ -5,10 +5,9 @@ Created on Wed Mar 25 17:17:57 2020
 @author: Pedro Drumond
 """
 
-#Precisamos travar o código antes da fase point e peruntar se está preparado para ela
-#Ajustar o jogar de novo
-#Dar as fichas
-
+#Keiya Nishio
+#Pedro Gomes de Sá Drumond
+#1B
 import random
 
 def jogo()  :
