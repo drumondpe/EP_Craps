@@ -2,7 +2,7 @@
 """
 Created on Wed Mar 25 17:17:57 2020
 
-@author: Pedro Drumond
+@author: Pedro Drumond and Keiya Nishio
 """
 
 #Keiya Nishio
